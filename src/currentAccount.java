@@ -1,4 +1,6 @@
-class currentAccount extends Account{
+package src;
+
+class currentAccount extends Account {
     private double overdraftLimit;
 
     public currentAccount(String accountNumber, String accountHolderName, double balance, double overDratLimit){

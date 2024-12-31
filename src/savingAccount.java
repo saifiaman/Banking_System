@@ -1,4 +1,6 @@
-class savingAccount extends Account{
+package src;
+
+class savingAccount extends Account {
     private double interstRate;
 
     public savingAccount(String accountNumber, String accountHolderName, double balance, double interstRate){

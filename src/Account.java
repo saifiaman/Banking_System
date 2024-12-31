@@ -1,3 +1,5 @@
+package src;
+
 import java.util.ArrayList;
 
 
@@ -16,7 +18,7 @@ abstract class Account{
     public void deposit(double amount){
         balance += amount;
         Transactions transaction = new Transactions("Deposit", amount, "Deposit to account"); // Record the transaction
-        trans.add(transaction); // add to Transactions ArrayList
+        trans.add(transaction); // add to src.Transactions ArrayList
         System.out.println(amount + " : Deposited. " + " New Balance : " + balance);
     }
 
@@ -34,10 +36,10 @@ abstract class Account{
 
     public void showTransactionHistory(){
         if(trans.isEmpty()){
-            System.out.println("NO Transactions YET!");
+            System.out.println("NO src.Transactions YET!");
         }
         else {
-            System.out.println("Transaction history for Account : " + accountNumber);
+            System.out.println("Transaction history for src.Account : " + accountNumber);
             for (Transactions transaction : trans) {
                 System.out.println(transaction);
             }
@@ -45,6 +47,7 @@ abstract class Account{
     }
 
     public double getBalance(){
+
         return balance;
     }
 

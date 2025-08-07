@@ -34,11 +34,13 @@ This banking system is designed for beginners who want to understand how real-wo
 
 ```
 /src
-  ├── model/
-  │   └── Account.java         # Represents bank account details
-  ├── service/
-  │   └── Bank.java            # Business logic for transactions
-  └── Main.java                # Entry point for user interface
+  ├── Account.java
+  ├── Bank.java
+  ├── BankingSystem.java
+  ├── Transaction.java
+  ├── CurrentAccount.java
+  └── SavingAccount.java
+
 ```
 
 ## 🛠️ How to Run
@@ -71,10 +73,10 @@ Enter your choice:
 
 ## 🔐 Sample Functional Flow
 
-- User creates an account with name and initial deposit.
-- User deposits or withdraws using account number.
+- User creates an account with a name and an initial deposit.
+- User deposits or withdraws using the account number.
 - Fund transfers occur between two existing accounts.
-- Balance can be checked anytime by entering account number.
+- Balance can be checked anytime by entering the account number.
 
 ## 📚 Future Enhancements
 
